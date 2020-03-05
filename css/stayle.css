@@ -1,0 +1,44 @@
+/*Коментарии в css файлах */
+/* Так же Contr+/ */
+/* Общие стили */
+
+/* Селекторы */
+body {
+    /* свойство:значение  */
+    background:rgb(229, 245, 245);
+    color: #441e46;
+    font-size: 20px;
+    margin: 0;
+
+}
+header{
+    background: rgb(132, 248, 238);
+}
+footer{
+    background: lightblue;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+a{
+    text-decoration: none ;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Селектор класса */
+.container {
+max-width: 1000px; /* 960 -1200 */
+margin: 0 auto; /* Центировать элемент  */
+
+}
+
+.find-friends{
+    display: none;
+}
