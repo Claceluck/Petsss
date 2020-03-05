@@ -2,3 +2,22 @@
 /* Подключение css в css, должна находиться в самом верху файла/*
 
 /* Уникальные стили для страницы Animals */
+.animal-photo{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+/* Селектор потомка */
+.animal-photo q {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: rgb(177, 10, 168);
+}
+.take-home {
+    padding: 10px 60px;
+    background: rgb(122, 17, 114);
+    border-radius: 10px;
+    color: powderblue;
+}
+

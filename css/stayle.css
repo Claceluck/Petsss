@@ -42,3 +42,13 @@ margin: 0 auto; /* Центировать элемент  */
 .find-friends{
     display: none;
 }
+.up-button{
+    /* Позиционирование */
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    width: 50px;
+    height: 50px;
+    background: orangered;
+    border-radius: 50%;
+}
