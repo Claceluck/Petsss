@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Найти друга</title>
+</head>
+<body>
+    <form name="search" action="#" method="post">
+        <p>Заполните форму ниже и мы подберем Вам питомца</p>
+        <fieldset>
+            <legend>Кого Вы ищете?</legend>
+
+            <label for="category">Пожелания</label>
+            <select id="category" name="category" size="2"> <!--multiple-->
+                <option value="cat">Кошка</option>
+                <option selected value="dog">Собака</option>
+            </select>
+        </fieldset>
+
+        <fieldset disabled>
+            <legend>Размер будущего питомца</legend>
+            <label>
+                <input type="checkbox" name="size[]" value="small">
+                Маленькие
+            </label>
+            <label>
+                <input type="checkbox" name="size[]" value="medium">
+                Средние
+            </label>
+            <label>
+                <input type="checkbox" name="size[]" value="big">
+                Крупные
+            </label>
+            <label>
+                <input checked type="checkbox" name="size[]" value="any">
+                Не имеет значения
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Пол будущего питомца</legend>
+            <label>
+                Мальчик
+                <input type="radio" name="gender" value="male">
+            </label>
+            <label>
+                Девочка
+                <input type="radio" name="gender" value="female">
+            </label>
+            <label>
+                Не имеет значения
+                <input checked type="radio" name="gender" value="any">
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Цвет будущего питомца</legend>
+
+            <label>
+                Белый
+                <input type="checkbox" name="color[]" value="white">
+            </label>
+            <label>
+                Серый
+                <input type="checkbox" name="color[]" value="gray">
+            </label>
+            <label>
+                Черный
+                <input type="checkbox" name="color[]" value="black">
+            </label>
+            <label>
+                Не имеет значения
+                <input checked type="checkbox" name="color[]" value="any">
+            </label>
+        </fieldset>
+        <input type="submit" value="Подобрать питомца"><!--отправка данных-->
+        <input type="reset" value="Очистить форму">
+        <input type="button" value="Просто кнопка">
+        <!--<button></button>-->
+    </form>
+</body>
+</html>

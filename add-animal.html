@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Добавление животного</title>
+</head>
+<body>
+    <form enctype="multipart/form-data"
+          name="add_animal" action="#" method="post">
+        <p>Форма добавления животного</p>
+
+        <div>
+            <label for="category">Категория животного</label>
+            <select required id="category" name="category">
+                <option value="cat">Кошка</option>
+                <option value="dog">Собака</option>
+            </select>
+        </div>
+
+        <div>
+            <label>
+                <input type="radio" name="color" value="white">
+                Белый
+            </label>
+            <label>
+                <input type="radio" name="color" value="black">
+                Черный
+            </label>
+            <label>
+                <input type="radio" name="color" value="gray">
+                Серый
+            </label>
+        </div>
+
+        <div>
+            <label for="name">Имя животного</label>
+            <input minlength="2" maxlength="10" id="name" type="text"
+                   name="animal_name" placeholder="имя">
+        </div>
+
+        <div>
+            <label for="age">Возраст животного</label>
+            <input name="age" id="age" type="number" min="0" max="30">
+        </div>
+
+        <div>
+            <label for="description">Описание животного</label>
+            <textarea minlength="20" name="description" id="description"></textarea>
+        </div>
+
+        <div>
+            <!--загрузка одного файла-->
+            <!--<input type="file" name="photo">-->
+            <!--загрузка нескольких файлов-->
+            <label>Фотографии животного</label>
+            <input id="photo" multiple type="file" accept="image/*" name="photo[]">
+        </div>
+
+        <div>
+            <label for="birth">Дата рождения</label>
+            <input id="birth" name="birth" type="date">
+        </div>
+
+
+    </form>
+</body>
+</html>
