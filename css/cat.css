@@ -1,0 +1,54 @@
+@import "stayle.css";
+
+/* Размечаем сетку, разбиваем на колонки с троки, тем самым образую блоки. */
+body{
+    display: grid; /* Без этого тега, грид не работает. */
+    grid-template-areas: 
+    "header_area header_area header_area"
+    "aside_area main_area some_block"
+    "footer_area footer_area footer_area";
+    /* Определяем колонки сетки */
+
+    grid-template-columns: 1fr minmax(500px, 1000px) 1fr;
+    /* Определяем ряды сетки */
+    grid-template-rows: auto auto auto;
+    /* Определяем колонки сетки */
+}
+/* Устанавливаем связь между html и css показываем гриду что с чем связывать  */
+header {
+    grid-area: header_area;
+}
+main{
+    grid-area: main_area;
+}
+footer{
+    grid-area: footer_area;
+}
+aside{
+    grid-area: aside_area;
+}
+#some_block {
+    grid-area: some_block;
+}
+
+.gallery{
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr Долгая запись */
+    grid-template-columns: repeat(4, 1fr); /* Сокращенный аналог с функцией */
+    gap: 10px;
+}
+#big_foto {
+    grid-column: 1/5;
+    opacity: 1; 
+    /* / !important Повышает приоретет но лучше не использовать. */
+}
+.gallery img {
+    /* Прозрачность */
+    opacity:0.6 ;
+    cursor: pointer;
+    border-radius: 10px;
+}
+/* :hover Это при наведение мышкой */
+.gallery img:hover {
+    opacity: 1;
+}

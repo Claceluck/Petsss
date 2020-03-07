@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Кот Валерий</title>
+    <link rel="stylesheet" href="css/cat.css">
 </head>
 <body>
     <Header>
@@ -36,6 +37,9 @@
             <p>Позвонить</p>
         </div>
     </Header>
+    <aside>
+        Не основной контент.
+    </aside>
     <main>
     <article>
         <h1>Основная информация</h1>
@@ -44,20 +48,25 @@
             <li>Возраст: 2 года</li>    
             <li>Цвет: Серо-оранжевый</li>
         </ul>
-        <div>
-            <h3>Фотографии</h3>
-            <img src="IMGpets/cats1.jpg" alt="КотБосс" width="500" height="500">
-            <img src="IMGpets/cats2.jpg" alt="КотБосс" width="500" height="500">
-            <img src="IMGpets/cats3.jpg" alt="КотБосс" width="500" height="500">
-            <img src="IMGpets/cats4.jpg" alt="КотБосс" width="500" height="500">
+        <h3>Фотографии</h3>
+        <div class="gallery">
+            <img src="IMGpets/cats1.jpg" alt="КотБосс">
+            <img src="IMGpets/cats2.jpg" alt="КотБосс">
+            <img src="IMGpets/cats3.jpg" alt="КотБосс">
+            <img src="IMGpets/cats4.jpg" alt="КотБосс">
+            <img  id="big_foto" src="IMGpets/cats4.jpg" alt="КотБосс">
         </div>
         <div>
             <h3>История</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore repellat, suscipit sapiente ipsam fugiat atque hic odio perferendis ipsum facilis repellendus sequi? Laborum ducimus, odit, illo impedit voluptatum nobis, tempore nesciunt doloremque dolore laboriosam provident quaerat architecto totam nihil praesentium reprehenderit non dicta consectetur? Provident.</p>
         </div>
     </article>
+    
     </main>
-</body>
+    <aside id="some_block">
+        Не основной контент.
+    </aside>
+
 <footer>
     <section>
         <h5>О нас</h5>
@@ -80,4 +89,5 @@
        </nav>
     </section>
 </footer>
+</body>
 </html>
