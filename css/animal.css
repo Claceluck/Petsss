@@ -1,4 +1,5 @@
 @import "stayle.css"; 
+@import "flexbox.css";
 /* Подключение css в css, должна находиться в самом верху файла/*
 
 /* Уникальные стили для страницы Animals */
@@ -19,5 +20,6 @@
     background: rgb(122, 17, 114);
     border-radius: 10px;
     color: powderblue;
+    margin-left: auto; /* Первое что нужно сделать*/
 }
 

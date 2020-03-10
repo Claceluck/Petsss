@@ -5,8 +5,12 @@
     height: 100%;
 }
 .top-articles-grid img{
-    opacity: 0.5;
+    opacity: 0.8;
 }
+/* .top-articles-grid img:hover{
+    opacity: 1;
+    cursor: pointer;
+} */
 .top-articles-grid article{
     position: relative;
     top: 0;
