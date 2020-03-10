@@ -2,17 +2,21 @@
 /* Так же Contr+/ */
 /* Общие стили */
 
+
+*{
+    box-sizing: border-box;
+}
 /* Селекторы */
 body {
     /* свойство:значение  */
-    background:rgb(229, 245, 245);
+    background:rgb(229, 245, 245,);
     color: #441e46;
     font-size: 20px;
     margin: 0;
 
 }
 header{
-    background: rgb(132, 248, 238);
+    background: rgb(132, 248, 238, 0.3);
 }
 footer{
     background: lightblue;
@@ -51,4 +55,21 @@ margin: 0 auto; /* Центировать элемент  */
     height: 50px;
     background: orangered;
     border-radius: 50%;
+}
+
+/* menu  */
+.menu a{
+    color: #695753;
+    border-right: 1px solid #b19891;
+    display: block;
+}
+.menu li:last-child a { 
+    border-right: none;
+}
+.content-center{
+    text-align: center;
+}
+.submenu a{
+    border-top: 1px solid #b19891;
+    border-right: none;
 }

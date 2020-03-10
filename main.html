@@ -18,26 +18,32 @@
         <!-- элементы страницы -->
         <Header>
             <!-- Шапка сайта -->
-            <nav>
-                <ul>  <!-- Меню-->
-                    <li>
+            <nav class="container">
+                <ul class="flex-row menu">  <!-- Меню-->
+                    <li class="flex-2 content-center">
                         <a href="main.html">Главная страница</a>
                     </li>
-                    <li>Животные
-                        <ul> <!-- Подменю выпадающий список-->
+                    <li class="flex-2 content-center"><a href="#">Животные</a>
+                        <ul class="submenu"> <!-- Подменю выпадающий список-->
                             <li>
-                                <a href="animals.html">Коты</a>
+                                <a href="animals.html">Кошки</a>
                             </li>
                             <li>
                                 <a href="">Собаки</a>
                             </li>
                         </ul> 
                     </li>
-                    <li>
+                    <li class="flex-2 content-center">
+                        <a href="#">Статьи</a>
+                    </li>
+                    <li class="flex-2 content-center">
                         <a href="seatch.html">Найти друга</a>
                     </li>
-                    <li>
+                    <li class="flex-2 content-center">
                         <a href="contacts.html">Контакты</a>
+                    </li>
+                    <li class="flex-2 content-center">
+                        <a href="auth.html">Войти</a>
                     </li>
                 </ul>
                 <!-- для навигации -->
@@ -48,6 +54,33 @@
             </div>
         </Header>
         <main class="container">
+
+            <section class="top-animals">
+                <h1>Наши питомцы</h1>
+                <div class="flex-row wrap">
+                    <div class="flex-row wrap">
+                        <div class="flex-6">
+                            <a href=""><img src="https://picsum.photos/700"></a>
+                        </div>
+                        <div class="flex-6 flex-row wrap">
+                            <div class="flex-6"><a href=""><img src="https://picsum.photos/700"></a></div>
+                            <div class="flex-6"><a href=""><img src="https://picsum.photos/700"></a></div>
+                            <div class="flex-6"><a href=""><img src="https://picsum.photos/700"></a></div>
+                            <div class="flex-6"><a href=""><img src="https://picsum.photos/700"></a></div>
+                        </div>
+                    
+                    </div>
+        
+                    <div class="flex-4"><a href=""><img src="https://picsum.photos/700"></a></div>
+                    <div class="flex-4"><a href=""><img src="https://picsum.photos/700"></a></div>
+                    <div class="flex-4"><a href=""><img src="https://picsum.photos/700"></a></div>
+                    <div class="flex-4"><a href=""><img src="https://picsum.photos/700"></a></div>
+                    <div class="flex-4"><a href=""><img src="https://picsum.photos/700"></a></div>
+                    <div class="flex-4"><a href=""><img src="https://picsum.photos/700"></a></div>
+                </div>
+        
+            </section>
+        
             <section class="top-articles">
                 <h1>Новые статьи</h1>
                 <div class="top-articles-grid" >
