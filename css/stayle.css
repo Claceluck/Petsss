@@ -79,3 +79,23 @@ margin: 0 auto; /* Центировать элемент  */
 footer input{
     margin: 10px 0;
 }
+
+/* MODAL AUTH */
+
+.modal{
+    position: absolute;
+    left: 33%;
+    background: lightblue;
+    padding: 30px;
+}
+.modal:target{
+    top: 50%;
+}
+.modal:not(:target) {
+    top: -50%;
+}
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}

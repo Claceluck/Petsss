@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Добавление животного</title>
+    <link rel="stylesheet" href="/css/form.css">
 </head>
 <body>
     <form enctype="multipart/form-data"
@@ -15,37 +16,42 @@
                 <option value="cat">Кошка</option>
                 <option value="dog">Собака</option>
             </select>
+            <span></span>
         </div>
 
         <div>
             <label>
-                <input type="radio" name="color" value="white">
                 Белый
+                <input required type="radio" name="color" value="white">
             </label>
             <label>
-                <input type="radio" name="color" value="black">
                 Черный
+                <input required type="radio" name="color" value="black">
             </label>
             <label>
-                <input type="radio" name="color" value="gray">
                 Серый
+                <input required type="radio" name="color" value="gray">
+                <span></span>
             </label>
         </div>
 
         <div>
             <label for="name">Имя животного</label>
-            <input minlength="2" maxlength="10" id="name" type="text"
+            <input required minlength="2" maxlength="10" id="name" type="text"
                    name="animal_name" placeholder="имя">
+                   <span></span>
         </div>
 
         <div>
             <label for="age">Возраст животного</label>
-            <input name="age" id="age" type="number" min="0" max="30">
+            <input required name="age" id="age" type="number" min="0" max="10" value="0">
+            <span></span>
         </div>
 
         <div>
             <label for="description">Описание животного</label>
-            <textarea minlength="20" name="description" id="description"></textarea>
+            <textarea required minlength="2" name="description" id="description"></textarea>
+            <span></span>
         </div>
 
         <div>
@@ -53,13 +59,17 @@
             <!--<input type="file" name="photo">-->
             <!--загрузка нескольких файлов-->
             <label>Фотографии животного</label>
-            <input id="photo" multiple type="file" accept="image/*" name="photo[]">
+            <input required id="photo" multiple type="file" accept="image/*" name="photo[]">
+            <span></span>
         </div>
 
         <div>
             <label for="birth">Дата рождения</label>
             <input id="birth" name="birth" type="date">
+            <span></span>
         </div>
+        <input type="submit" value="Добавить">
+        
 
 
     </form>

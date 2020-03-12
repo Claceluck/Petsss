@@ -8,3 +8,31 @@ input[type="submit"] {
     border-radius: 5px;
     background: orangered;
 }
+/* input:focus фокус на конкретном инпуте так как без*/
+form :focus {
+    outline:none ;
+}
+form :invalid {
+    border: 1px solid red;
+}
+form:valid,
+textarea:valid,
+input:valid {
+    border: 2px solid green;
+}
+/* Кнопки для заполнения форм валидация и невалидация */
+form :required + span::before {
+    content:"\2718";
+    font-weight: bolder;
+    color: red;
+    margin-left: 10px;
+    font-size: 20px;
+}
+form :required:focus:valid + span::before,
+form :required:not(focus):valid + span::before {
+    content:"\2714";
+    font-weight: bolder;
+    color: green;
+    margin-left: 10px;
+    font-size: 20px;
+}
