@@ -62,6 +62,7 @@ margin: 0 auto; /* Центировать элемент  */
     color: #695753;
     border-right: 1px solid #b19891;
     display: block;
+    padding: 16px 0;
 }
 .menu li:last-child a { 
     border-right: none;
@@ -72,4 +73,9 @@ margin: 0 auto; /* Центировать элемент  */
 .submenu a{
     border-top: 1px solid #b19891;
     border-right: none;
+}
+
+/* footer  */
+footer input{
+    margin: 10px 0;
 }

@@ -18,3 +18,18 @@
 .flex-2{
     flex: 16.66%;
 }
+.space-araund{
+    justify-content: space-around;
+}
+.flex-collum{
+    display: flex;
+    flex-direction: column;
+}
+.menu li {
+    flex-grow: 1;
+}
+
+/* Footer  */
+footer section{
+    flex-grow: 1;
+}
