@@ -8,6 +8,7 @@
     top: 0;
     left: 0;
     opacity: 0.6;
+    transition: opacity 1s;
 }
 /* Селектор потомка */
 .animal-photo q {
@@ -17,6 +18,7 @@
     color: rgb(177, 10, 168);
     font-size: xx-large;
     opacity: 0;
+    transition: opacity 1s;
 }
 .take-home {
     padding: 10px 60px;

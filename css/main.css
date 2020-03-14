@@ -49,3 +49,13 @@
     grid-column:2/4;
     transform: rotate(7deg);
 }
+.top-animals div {
+    overflow: hidden;
+}
+.top-animals img:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+.top-animals img {
+    transition: all 1s;
+}
